@@ -1,0 +1,21 @@
+
+#! /bin/sh
+
+set -o errexit
+
+BASEDIR="/var/www/GIS2/git/Agentes/src/"
+
+chmod -R 777 $BASEDIR
+
+cd $BASEDIR
+
+./Agentes var=1,2 > /dev/null 2>&1 &
+./Agentes var=3,4 > /dev/null 2>&1 &
+./Agentes var=5,6 > /dev/null 2>&1 &
+./Agentes var=7,8 > /dev/null 2>&1 &
+./Agentes var=9,0 > /dev/null 2>&1 &
+
+#Evitando que se detenga el proceso
+while true; do
+sleep 2
+done
