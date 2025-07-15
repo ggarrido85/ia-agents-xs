@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sedaafar>
-    <connection driver="QPSQL" dbname="git" host="Genesig.BD9.xetid" user="ing" password="ingsig09Grm" />
+    <connection driver="QPSQL" dbname="rust" host="PG.BD9" user="XXXXX" password="XXXXX" />
     <esquemas>
         <ia>mod_ia</ia>
         <monitoreo>mod_monitoreo</monitoreo>
